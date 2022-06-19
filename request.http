@@ -1,0 +1,28 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Caderno",
+    "price": 3.4
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/product/4855489b-c644-4c46-8f9d-fe511bfd030d
+
+
+###
+PUT http://localhost:4002/product/4846c4fd-e43c-46d1-bfc1-edce66a3d931
+content-type: application/json
+
+{
+    "name": "teste de alteração",
+    "price": "56"
+}
+
+###
+DELETE http://localhost:4002/product/500757fb-aeeb-4ce9-b744-5391e989d695
